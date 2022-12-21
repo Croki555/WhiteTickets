@@ -1,0 +1,45 @@
+.stock__section {
+    padding: 64px 0 64px 0;
+}
+
+.stock__title {
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+}
+
+.stock__description {
+    margin-bottom: 40px;
+}
+
+/* Картинки */
+.stock__imgs {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stock__imgs:hover {
+    box-shadow: 0px 15px 17px #97A2A8;
+}
+
+.stock__img-1 {
+    background-image: url("../images/stonks/promotion1.jpg");
+}
+
+.stock__img-2 {
+    background: #fff;
+    background-image: url("../images/stonks/promotion2.jpg");
+    background-size: 766px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.stock__img-3 {
+    background-image: url("../images/stonks/promotion3.jpg");
+    background-position: unset;
+}
+
+.stock__img-4 {
+    background-image: url("../images/stonks/promotion4.jpg");
+}

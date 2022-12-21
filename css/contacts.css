@@ -1,0 +1,38 @@
+.contacts-body {
+    background: #DCEBF5;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.contacts__section {
+    padding: 64px 0;
+}
+.contacts__title,
+.contacts__descr:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.contacts__descr a {
+    color: #5B02C5;;
+}
+
+.footer-contacts {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 436px) {
+    .contacts__mail {
+        margin-left: 0!important;
+    }
+}
+
+@media (max-width: 338px) {
+    .contacts__num {
+        margin-left: 0!important;
+    }
+}

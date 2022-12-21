@@ -1,0 +1,67 @@
+.login {
+    pointer-events: all;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login__form {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: #3b7c36;
+    border-radius: 20px;
+}
+
+.login__title {
+    margin: 0;
+    color: #fff;
+}
+
+.login__input-name {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #F5F4DC;
+}
+
+
+.login__input-password {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #F5F4DC;
+}
+
+
+.login__btn {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: #DCEBF5;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login__btn:hover {
+    background: #55367c;
+    color: #fff;
+}
+
+
+.login__btn-close {
+    position: absolute;
+    right: 5px;
+    background: transparent;
+    top: 5px;
+    border: none;
+    font-size: 25px;
+}
+
+.login__btn-close:hover {
+    color: #ff0000;
+}

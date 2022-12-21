@@ -1,0 +1,50 @@
+.slider__container {
+    position: relative;
+    display: flex;
+}
+.slider__block {
+    position: absolute;
+    left: -100%;
+    transform: scale(0);
+    visibility: hidden;
+    height: 500px;
+    max-width: 1000px;
+    width: 100%;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.slider__open {
+    position: unset;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+}
+
+.slider__img {
+    width: 100%;
+    height: inherit;
+}
+.slider__btn {
+    flex-grow: 1;
+    border: none;
+    background: #DCEBF5;
+}
+
+.slider__btn span {
+    font-size: 100px;
+    color: #77377C;
+}
+
+.slider__btn:hover {
+    background: #DDFF84;
+}
+.slider__btn:hover.slider__btn span {
+    color: #240DFD;
+}
+
+.slider__btn:active {
+    background: #F5F4DC;
+}
+.slider__btn:active.slider__btn span {
+    color: #77377C;
+}

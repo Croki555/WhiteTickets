@@ -1,0 +1,44 @@
+
+.stocks__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+    /* gap: 30px; */
+    padding: 0;
+}
+.stock__item {
+    background: #DCEBF5;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.stock__img {
+    background-image: url('../images/ticket.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    background-size: contain;
+}
+.stock__descr {
+    font-size: 20px;
+}
+.sail {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.sail__old {
+    font-size: 20px;
+}
+
+.sail__old s {
+    margin-left: 5px;
+}
+.sail__new {
+    color: #ff0000;
+    align-self: end;
+}
+
+.stock__btn-buy {
+    width: 100%;
+}

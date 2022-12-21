@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/6cb8a95bb2.js" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <title>WhiteTickets</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body class="body">
+<header class="header bg-purple py-3">
+        <h2 class="text-white display-4  header__title2">Лучший путеводитель в мире развлечений</h2>
+        <nav class="navbar navbar-expand-xl justify-content-between justify-content-between pt-0 px-3 flex-xl-nowrap">
+            <a class="navbar-brand m-0 header__logo2" href="index.html">
+                <img src="myimg/logo.svg" class="logo" alt="Логотип WhiteTickets" width="130" height="64">
+            </a>
+            <button class="btn burger p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="burger__span"></span>
+                <span class="burger__span"></span>
+                <span class="burger__span"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar">
+                <div class="container-fluid d-flex flex-column align-items-center collapse__block1">
+                    <div class="d-flex w-100 justify-content-xl-center align-items-center  collapse__block2">
+                        <a class="navbar-brand m-0 header__logo" href="index.html">
+                            <img src="myimg/logo.svg" class="logo" alt="Логотип WhiteTickets" width="130" height="64">
+                        </a>
+                        <h2 class="text-white s-48  m-0 mx-4 header__title">Лучший путеводитель в мире развлечений</h2>
+                    </div>
+                    <ul class="navbar-nav mb-3">
+                        <li class="nav-item">
+                            <a href="stock.html"  class="nav-link s-25" >Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html" class="nav-link s-25">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link s-25 personal-acc">Личный кабинет</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex header__form">
+                        <p class="d-inline-flex  m-xl-0"><span class="me-2 s-25  align-self-center">От:</span><input  type="date" class="form-control s-25" name="fromDate" id="date1"></p>
+                        <p class="d-inline-flex  m-xl-0 mx-xl-2"><span class="me-2 s-25  align-self-center">До:</span><input type="date" class="form-control s-25" name="beforeDate" id="date2"></p>
+                        <p class="d-inline-flex  m-xl-0">
+                            <select class="form-select me-xl-2 w-xl-auto s-25"  aria-label="Default select example">
+                                <option selected>Тип концерта</option>
+                                <option value="1">Классика</option>
+                                <option value="2">Рок</option>
+                                <option value="3">Джаз</option>
+                                <option value="4">Народная/Флок</option>
+                                <option value="5">Хип-Хоп</option>
+                                <option value="6">Другое</option>
+                            </select>
+                        </p>
+                        <label for="guests" class="d-flex s-25 justify-content-between">
+                            <span class="d-flex align-items-center me-2">Гостей:</span>
+                            <input class="form-control w-xl-auto s-25 me-xl-2 " type="number" name="guests" step="1" id="guests" min="1" max="5" value="1">
+                        </label>
+                        <button class="btn-yellow s-25" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+</header>
+<main>
+    <section class="slider slider__section">
+        <div class="slider__container">
+            <button class="slider__btnPrev slider__btn"><span>&#8656;</span></button>
+            <div class="slider__block slider__open">
+                <img class="slider__img" src="images/3757942b-b870-4b47-b6c2-e7d7d9b80492_1.jpg" alt="Билет на концерт Сергея Трофимова 7 января">
+            </div>
+            <div class="slider__block">
+                <img class="slider__img" src="images/313c69d11517d6cb239612ff79ebc989447e97df.jpg" alt="Скульптура и город" >
+            </div>
+            <div class="slider__block">
+                <img class="slider__img" src="images/9090523d5118148a0579445614a7d3be.jpg" alt="Человек покупает билет на концерт">
+            </div>
+            <button class="slider__btnNext slider__btn"><span>&#8658;</span></button>
+        </div>
+    </section>
+    <section class="stock stock__section">
+        <div class="container-xxl">
+            <div class="mb-4">
+                <h2 class="s-38 text-center stock__title">Билеты на спектакли в театре им. Ленсовета со скидкой 50%</h2>
+                <div class="d-flex stock__block">
+                    <div class="w-50 stock__img-1 stock__imgs"></div>
+                    <div class="w-50 px-3 d-flex flex-column justify-content-between">
+                        <p class="stock__description text-justify s-25 text-black text-indent text-line-height">Срок проведения акции: с 11:00 25 октября 2020 года до 18:00 18 ноября 2020 года. <br>
+                            Место проведения акции: Билеты по акции доступны для клиентов в театральных кассах и на сайте
+                            (с условием получения билетов в период проведения акции).Условия проведения акции: Билеты на спектакли в театре им. Ленсовета, указанные ниже,
+                            со скидкой 50%.На билеты, купленные на сайте www.bileter.ru до начала акции, скидка не действует.  В период проведения акции цена билета указана
+                            со скидкой.Обратите внимание! Билеты, приобретенные по данной акции, будут приниматься к возврату.
+                        </p>
+                        <button type="button" class="btn-blue">Узнать подробнее об акции</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h2 class="s-38 text-center  stock__title">Билеты на спектакли в театре «На Литейном» со скидкой 20%</h2>
+                <div class="d-flex flex-lg-row-reverse stock__block">
+                    <div class="w-50 stock__img-2 stock__imgs"></div>
+                    <div class="w-50 align-self-center d-flex flex-column justify-content-between px-3">
+                        <div class="stock__description text-justify s-25 text-black">
+                            <p class="text-indent text-line-height">
+                                Срок проведения акции: с 09:00 3 ноября 2020 года до 19:00 20 ноября 2020 года.
+                                Место проведения акции: Билеты по акции доступны для клиентов на сайте (с условием получения билетов в период проведения акции).
+                                Условия проведения акции: В рамках акции билеты на спектакли в театре «На Литейном», указанные ниже, можно приобрести на 20% ниже
+                                первоначальной цены по промокоду «TEPLO20».
+                            </p>
+                            <p class="mb-0 text-indent text-line-height">
+                                На билеты, купленные на сайте www.bileter.ru до начала акции, скидка не действует.
+                            Обратите внимание! Билеты, приобретенные по данной акции, не будут приниматься к возврату. Порядок проведения акции:
+                            Скидка по акции предоставляется по промокоду «TEPLO20». Для получения скидки в период проведения акции вам
+                            необходимо: – на сайте www.bileter.ru при осуществлении заказа билетов самостоятельно ввести промокод акции.
+                            </p>
+                        </div>
+                        <button type="button" class="btn-blue">Узнать подробнее об акции</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <h2 class="s-38 text-center stock__title">Билеты на спектакль «Дом на Петербургской стороне» со скидкой 30%</h2>
+                <div class="d-flex stock__block">
+                    <div class="w-50 stock__img-3 stock__imgs">                    </div>
+                    <div class="w-50 d-flex flex-column justify-content-between px-3">
+                        <p class="stock__description text-justify s-25 text-black text-indent text-line-height">
+                            Скидка по акции предоставляется по промокоду «HNY2020-30».Для получения скидки в период проведения акции вам необходимо:– на сайте при осуществлении
+                            заказа билетов самостоятельно ввести промокод акции;– в театральных кассах: при приобретении билетов назвать продавцу-кассиру промокод акции.
+                        </p>
+                        <button type="button" class="btn-blue">Узнать подробнее об акции</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="s-38 text-center stock__title">Билеты на спектакль «Налево от лифта» со скидкой 30%</h2>
+                <div class="d-flex flex-lg-row-reverse stock__block">
+                    <div class="w-50 stock__img-4 stock__imgs"></div>
+                    <div class="w-50 d-flex flex-column justify-content-between px-3">
+                        <p class="stock__description s-25 text-black text-justify text-indent text-line-height">
+                            Скидка по акции предоставляется по промокоду «07112020».
+                            Для получения скидки в период проведения акции вам необходимо:– на сайте при
+                            осуществлении заказа билетов самостоятельно ввести промокод акции;– в театральных кассах: при приобретении билетов назвать продавцу-кассиру промокод акции.
+                        </p>
+                        <button type="button" class="btn-blue">Узнать подробнее об акции</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-4 pt-4 closed-stock__section">
+        <div class="container-xxl text-center">
+            <div class="d-flex justify-content-around align-items-center closed-stock__block">
+                <h2 class="s-38 closed-stock__title m-0">Подписаться на закрытые акции</h2>
+                <form action="#" method="post" class="d-flex closed-stock__form">
+                    <input class="form-control closed-stock__input-email mx-2" type="email" name="email" placeholder="Ваш email">
+                    <button type="submit" class="btn-blue closed-stock__btn">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="points points__section">
+        <div class="container-xxl">
+            <h2 class="s-38 points__title">Принцип накопления баллов</h2>
+            <p class="mb-0 s-25 text-justify text-black text-indent text-line-height">
+                Секция(и) описания принципа накопления баллов для покупки более выгодных билетов на Ваш концерт. Три принципа необходимо визуализировать при помощи, анимированной инфографики на основе вводимых демо данных посетителем. Например, выбор условной даты, ввод числа кол-ва билетов и демонстрация изменения стоимости.
+            </p>
+        </div>
+    </section>
+    <section class="border-bottom comments comments__section">
+        <div class="container-xxl">
+            <h2 class="s-38 comments__title text-center s-48">Почему выбирают нас?</h2>
+            <div class="row mb-3 justify-content-center row-1">
+                <div class="col-5 me-3 p-3 comments__block h-auto">
+                    <h3 class="s-38">Качество</h3>
+                    <p class="s-25">Мы даём гарантии на выполненные нами работы</p>
+                </div>
+                <div class="col-5 p-3 comments__block h-auto">
+                    <h3 class="s-38">Профессионализм</h3>
+                    <p class="s-25">К работе допускаются только сотрудники, имеющие соответствующую подготовку</p>
+                </div>
+            </div>
+            <div class="row justify-content-center row-2">
+                <div class="col-5 p-3 me-3 comments__block h-auto">
+                    <h3 class="s-38">Надежность</h3>
+                    <p class="s-25">Мы сотрудничаем с надежными поставщиками по всей России</p>
+                </div>
+                <div class="col-5 p-3 comments__block h-auto">
+                    <h3 class="s-38">Точно в срок</h3>
+
+                    <p class="s-25">Мы строго придерживаемся установленных планов и сроков исполнения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map__section">
+        <div class="map">
+            <div id="map" class="p-4" style="max-width: 1000px; width: 100%; height: 400px"></div>
+        </div>
+    </section>
+</main>
+<footer class="footer bg-white-orange py-4">
+    <div class="container-xxl">
+        <nav class="nav d-flex justify-content-center border-bottom pb-3">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="https://vk.com/" target="_blank" class="nav-link s-25">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav-link s-25">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/" target="_blank" class="nav-link s-25">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:+88002892010" class="nav-link s-25">8 (800) 289-20-10</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <p class="text-center text-white">© White Tickets 2022</p>
+    </div>
+</footer>
+<script src="myJS/map.js"></script>
+<script src="myJS/script.js"></script>
+</body>
+</html>

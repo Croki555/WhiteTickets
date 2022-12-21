@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/6cb8a95bb2.js" crossorigin="anonymous"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <title>WhiteTickets</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+<header class="header bg-purple py-xl-3">
+    <h2 class="text-white display-4  header__title2">Лучший путеводитель в мире развлечений</h2>
+    <nav class="navbar navbar-expand-xl justify-content-between justify-content-between pt-0 px-3 flex-xl-nowrap">
+        <a class="navbar-brand m-0 header__logo2" href="index.html">
+            <img src="myimg/logo.svg" class="logo" alt="Логотип WhiteTickets" width="130" height="64">
+        </a>
+        <button class="btn burger p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="burger__span"></span>
+            <span class="burger__span"></span>
+            <span class="burger__span"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbar">
+            <div class="container-fluid d-flex flex-column align-items-center collapse__block1">
+                <div class="d-flex w-100 justify-content-xl-center align-items-center mb-3 collapse__block2">
+                    <a class="navbar-brand m-0 header__logo" href="index.html">
+                        <img src="myimg/logo.svg" class="logo" alt="Логотип WhiteTickets" width="130" height="64">
+                    </a>
+                    <h1 class="text-white s-48  m-0 mx-4 header__title">Лучший путеводитель в мире развлечений</h1>
+                </div>
+                <ul class="navbar-nav mb-3">
+                    <li class="nav-item">
+                        <a href="index.html"  class="nav-link s-25" >Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html"  class="nav-link s-25" >Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link s-25 personal-acc">Личный кабинет</a>
+                    </li>
+                </ul>
+                <form class="d-flex header__form">
+                    <p class="d-inline-flex  m-xl-0"><span class="me-2 s-25  align-self-center">От:</span><input  type="date" class="form-control s-25" name="fromDate" id="date1"></p>
+                    <p class="d-inline-flex  m-xl-0 mx-xl-2"><span class="me-2 s-25  align-self-center">До:</span><input type="date" class="form-control s-25" name="beforeDate" id="date2"></p>
+                    <p class="d-inline-flex  m-xl-0">
+                        <select class="form-select me-xl-2 w-xl-auto s-25"  aria-label="Default select example">
+                            <option selected>Тип концерта</option>
+                            <option value="1">Классика</option>
+                            <option value="2">Рок</option>
+                            <option value="3">Джаз</option>
+                            <option value="4">Народная/Флок</option>
+                            <option value="5">Хип-Хоп</option>
+                            <option value="6">Другое</option>
+                        </select>
+                    </p>
+                    <label for="guests" class="d-flex s-25 justify-content-between">
+                        <span class="d-flex align-items-center me-2">Гостей:</span>
+                        <input class="form-control w-xl-auto s-25 me-xl-2 " type="number" name="guests" step="1" id="guests" min="1" max="5" value="1">
+                    </label>
+                    <button class="btn-yellow s-25" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="stock__section">
+        <div class="container-xxl">
+            <h1 class="stock__title mb-4">БИЛЕТЫ НА КОНЦЕРТЫ СО СКИДКОЙ</h1>
+            <div class="stocks__tickets">
+                <ul class="stocks__list">
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                    <li class="stock__item">
+                        <div class="stock__img w-100 mb-2"></div>
+                        <h2 class="stock__title mb-2">Название концерта</h2>
+                        <p class="stock__descr text-justify"><b>Описание:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. temporibus officiis! Accusamus sapiente illo quo.</p>
+                        <div class="sail mb-3">
+                            <span class="sail__old me-2">Цена:<s>3500 ₽</s></span>
+                            <span class="sail__new s-38">1750 ₽</span>
+                        </div>
+                        <button class="stock__btn-buy btn-blue">Купить</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer bg-white-orange py-4">
+    <div class="container-xxl">
+        <nav class="nav d-flex justify-content-center border-bottom pb-3">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link s-25">
+                        Главная
+                    </a>
+                </li>   
+                <li class="nav-item">
+                    <a href="https://vk.com/" target="_blank" class="nav-link s-25">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav-link s-25">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/" target="_blank" class="nav-link s-25">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:+88002892010" class="nav-link s-25">8 (800) 289-20-10</a>
+                </li>
+
+            </ul>
+        </nav>
+        <p class="text-center text-white">© White Tickets 2022</p>
+    </div>
+</footer>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="myJS/script.js"></script>  
+</body>
+</html>

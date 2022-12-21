@@ -1,0 +1,25 @@
+/* @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/Roboto-Black.ttf");
+} */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/myfonts/Oswald-VariableFont_wght.ttf");
+}
